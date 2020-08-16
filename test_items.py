@@ -1,3 +1,4 @@
+import time
 link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
 def is_element_present(browser):
@@ -10,5 +11,5 @@ def is_element_present(browser):
 
 def test_button_presence(browser):
     browser.get(link)
-
+    #time.sleep(30) #при смене языка на франц. -- раскомментить^^
     assert is_element_present(browser), "Искомая кнопка отсутствует"
